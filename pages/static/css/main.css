@@ -1987,10 +1987,9 @@ body:after {
 }
 
 .primary-btn:after{
-  background-image: -moz-linear-gradient(0deg, #d8bc31  0%, #dad88c  100%);
-  background-image: -webkit-linear-gradient(0deg, #d8bc31  0%, #dad88c  100%);
-  background-image: -ms-linear-gradient(0deg, #d8bc31  0%, #dad88c  100%);
-
+  background-image: -moz-linear-gradient(0deg, #2ca6e8  0%, #dbd830 50%, #dea128  100%);
+  background-image: -webkit-linear-gradient(0deg, #2ca6e8  0%, #dbd830 50%, #dea128  100%);
+  background-image: -ms-linear-gradient(0deg, #2ca6e8  0%, #dbd830 50%, #dea128  100%);
 }
 
 .p1-gradient-color, .single-feature .icon span {

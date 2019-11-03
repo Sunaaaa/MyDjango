@@ -1,1 +1,16 @@
 {% extends 'base.html' %}
+{% load static %}
+  {% block nmovie %}
+  {% for i in mname %}
+    <div class="item">
+      <div class="thumb" style="background: url({% static 'img/g6.jpg'%});"></div>
+      <div class="caption text-center">
+        <h6 class="text-uppercase">{{i}} </h6>
+        <p>
+          {{i}}
+        </p>
+      </div>
+    </div>
+
+  {% endfor %}
+  {% endblock  %}
