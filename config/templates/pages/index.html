@@ -1,13 +1,15 @@
 {% extends 'base.html' %}
 {% load static %}
   {% block nmovie %}
-  {% for i in mname %}
+  {% for i in movies %}
     <div class="item">
-      <div class="thumb" style="background: url({% static 'img/g6.jpg'%});"></div>
+      <div class="thumb" style="margin : 0 auto;">
+      <p style="text-align: center; font-size: 100px;">{{i.rank}}</p>
+      </div>
       <div class="caption text-center">
-        <h6 class="text-uppercase">{{i}} </h6>
+        <h6 class="text-uppercase">{{i.movieNm}} </h6>
         <p>
-          {{i}}
+          {{i.rank}}위 
         </p>
       </div>
     </div>
