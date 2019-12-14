@@ -9,11 +9,14 @@ def index(request):
     url = "http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json"
     key="fab6fd6434401fd4302d3ebdab8fef88"
     # today = DateFormat(datetime.now()).format('Ymd')
-    t = '20191212'
+    dt = datetime.now()
+    today = str(dt.year) + str(dt.month) + str(dt.day-1)
+    print(today)
+#    t = '20191212'
 
 
 
-    movie_url = f'{url}?key={key}&targetDt={t}'
+    movie_url = f'{url}?key={key}&targetDt={today}'
 
     data = requests.get(movie_url).json()
     movies = data.get('boxOfficeResult').get('dailyBoxOfficeList')[:5]
@@ -32,6 +35,7 @@ def index(request):
     return render(request, 'pages/index.html', context)
 
 def detail(request):
+    print('DETAIL')
     context = {
 
     }
