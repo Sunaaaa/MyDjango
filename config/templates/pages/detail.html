@@ -1,7 +1,37 @@
 {% extends 'base.html' %}
 {% load static %}
-  {% block nmovie %}
 
-  <h1>영화 상세 페이지</h1>
+{% block banner %}
+  <div class="banner-area">
+    <div class="container">
+      <div class="row justify-content-center height align-items-center">
+        <div class="col-lg-8">
+          <div class="banner-content text-center">
+            <span class="text-white top text-uppercase">Todays Movies</span>
+            <h1 class="text-white text-uppercase">오늘의 영화를 찾아보세요.</h1>
+            <div class="row">
+              <div class="col-lg-8 col-md-8">
+                <form action="#">
+                  <div class="mt-10">
+                    <input type="text" name="first_name" placeholder="First Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required class="single-input">
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-3 col-md-4 mt-sm-30">
+                <div class="single-element-widget">
+                  <a href="#" class="primary-btn d-inline-flex align-items-center"><span class="mr-10">Find</span><span class="lnr lnr-arrow-right"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock  %}
 
-  {% endblock  %}
+ 
+{% block nmovie %}
+
+<h1>영화 상세 페이지</h1>
+
+{% endblock  %}

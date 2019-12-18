@@ -91,11 +91,11 @@
           {% for i in movies %}
             <div class="item">
               <div class="thumb" style="margin : 0 auto;">
-              <p style="text-align: center; font-size: 100px;">{{i.rank}}</p>
+              <p class="mt-5" style="text-align: center; font-size: 100px;">{{i.rank}}</p>
               </div>
               <div class="caption text-center">
                 <h6 class="text-uppercase">
-                <a href="pages:detail">{{i.movieNm}}</a> 
+                <a href="pages:detail movieCd">{{i.movieNm}} ---- {{i.movieCd}}</a> 
                 </h6>
                 <p>
                   {{i.rank}}위 
