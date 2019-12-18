@@ -19,6 +19,8 @@
   {% block title %}
   	<title>Movies</title>
   {% endblock  %}
+	{% block style %}
+	{% endblock style %}
 
 		<!--CSS	============================================= -->
   	<link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
@@ -45,21 +47,24 @@
 									<a href="generic.html">Search</a>
 									<a href="elements.html">Elements</a>
 								</nav>
-								<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
+								<div class="menu-bar"><span class="lnr lnr-menu"></span>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</header>
-      {% block banner %}
-      {% endblock  %}
-
+		</div>
+<br>
+		{% block banner %}
+		{% endblock  %}
+<br>
 		{% block feature %}
 		{% endblock feature %}
-
+<br>
 		{% block movie %}
 		{% endblock  %}
-
+<br>
 		{% block float %}
 		{% endblock float %}
 
